@@ -1,0 +1,31 @@
+* Kicad project template
+
+  Contains scripts and the basic directory structure of a kicad project.
+
+
+* tools
+** bin/sync.sh
+   Syncs any relevant changes to this repo to another project.
+*** usage
+   #+BEGIN_SRC sh
+   % bin/sync.sh ../linear_psu_v1
+   #+END_SRC
+
+** bin/generate_readme
+   - converts any SVG images in images/ to PNG
+   - updates the README.org file
+
+   /(explanation and other relevant information is in the source code)/
+*** usage
+    #+BEGIN_SRC sh
+    % bin/generate_readme
+    #+END_SRC
+** bin/gerb2etch
+   modified from https://github.com/sleemanj/gerb2etch
+   converts a gerber files to images.
+
+*** usage
+   #+BEGIN_SRC sh
+   % bin/gerb2etch
+
+   #+END_SRC
